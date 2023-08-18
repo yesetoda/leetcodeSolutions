@@ -1,0 +1,8 @@
+from math import sqrt,floor
+class Solution:
+    def pickGifts( gifts: list[int], k: int) -> int:
+        gft = gifts[:]
+        for i in range(k):
+            gft[gft.index(max(gft))] = floor(sqrt(max(gft)))
+        return sum(gft)
+    print(pickGifts(gifts = [1,1,1,1], k = 4))
