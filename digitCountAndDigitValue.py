@@ -5,5 +5,6 @@ class Solution:
             # print(i,int(num[i]),num.count(str(i)),int(num[i]) != num.count(i))
             if int(num[i]) != num.count(str(i)):
                 return False
+            
         return True
     print(digitCount("030"))

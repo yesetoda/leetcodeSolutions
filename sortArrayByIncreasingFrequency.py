@@ -1,9 +1,9 @@
 from collections import Counter
 class Solution:
     def frequencySort( nums: list[int]) -> list[int]:
-        freq = Counter(nums)
-        print(freq)
-        out = ""
-        for i,j in  freq.items():
-            
-    print(frequencySort(nums = [1,1,2,2,2,3]))
+        out  = []
+        for i in Counter(sorted(nums)).most_common():
+            for j in range(i[1]):
+                out.append(i[0])
+        return out[::-1]
+    print(frequencySort(nums = [1,5,0,5]))
