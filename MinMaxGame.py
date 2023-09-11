@@ -14,3 +14,5 @@
 # print(MMGame(nums = [1,3,5,2,4,8,2,2]))
 from random import randint
 print([randint(1, 10**9) for i in range(1024)])
+a = 'jdfksld'
+print(a.startswith())
